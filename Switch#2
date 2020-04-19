@@ -1,0 +1,15 @@
+let login = prompt("Your Login:");
+let password = prompt("Your password please: ");
+
+switch(true){
+    case login === "User" && password === "0000":
+        alert(`Welcome, ${login}!`);
+        break;
+
+    case login === "Admin" && password === "1111":
+        alert(`Welcome, ${login}!`);
+        break;
+
+    default:
+        alert("User Not Found!");
+}
