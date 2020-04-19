@@ -1,0 +1,27 @@
+let login = prompt("Enter your login here: ");
+
+switch(login) {
+    case "User":
+        let userPass = prompt("Enter your USER Password: ");
+        if (userPass == "1111") {
+
+            alert("Welcome USER PC");
+
+        } else if (userPass != "1111") {
+
+            alert("Wrong Password");
+        }
+        break;
+    case "Admin":
+        let adminPass = prompt("Enter Your Admin password: ");
+        if (adminPass == "0000"){
+            alert("Welcome Admin User");
+
+        } else if (adminPass != "0000"){
+            alert("You are Banned!");
+        }
+        
+        break;
+        default:
+            alert("404 Not Found!");
+}
